@@ -1,0 +1,8 @@
+{
+  "name": "antonioChallenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/aantonnio/antonioChallenge.git",
+  "author": "antonio umana <jose.umana@totemtech.net>",
+  "license": "MIT"
+}

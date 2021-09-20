@@ -1,0 +1,10 @@
+*.zip
+.env
+node_modules/
+example.js
+csvs/
+app/temp
+.VSCodeCounter/
+
+logs
+*.log

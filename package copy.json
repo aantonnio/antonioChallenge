@@ -1,0 +1,33 @@
+{
+  "name": "csv-parser-api",
+  "version": "1.0.0",
+  "description": "parse csvs into mongo",
+  "main": "app/index.js",
+  "repository": "ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/csv-parser-api",
+  "author": "antonio umana <jose.umana@totemtech.net>",
+  "license": "no-license",
+  "scripts": {
+    "redev": "rm -r node_modules && yarn",
+    "clean_port": "lsof -ti:3000 | xargs kill",
+    "start": "node app/index.js",
+    "test_behavior": "lab -v --bail ./test/behavior/",
+    "test_mongo": "lab -v --bail ./test/mongo/"
+  },
+  "devDependencies": {
+    "@hapi/code": "^8.0.3",
+    "@hapi/lab": "^24.3.2",
+    "axios": "^0.21.4",
+    "dotenv": "^10.0.0",
+    "form-data": "^4.0.0",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "exit-hook": "^3.0.0",
+    "express": "^4.17.1",
+    "fast-csv": "^4.3.6",
+    "moment": "^2.29.1",
+    "mongodb-memory-server": "^7.4.1",
+    "mongoose": "^6.0.6",
+    "multer": "^1.4.3"
+  }
+}
